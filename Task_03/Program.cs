@@ -10,15 +10,10 @@ int ReadInt(string message)
     return number;
 }
 
-int Cube(int x)
-{
-    x = x*x*x;
-    return x; 
-}
 
 int N = ReadInt("Введите число N");
-for (int i = 0; i < N; i++)
+for (int i = 1; i <= N; i++)
 {
-   Console.Write(Cube(i + 1));
+   Console.Write(Math.Pow(i, 3));
    Console.Write(" ");
 }
